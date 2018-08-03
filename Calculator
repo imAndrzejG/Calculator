@@ -1,0 +1,96 @@
+#include <iostream>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+
+{
+    system("color a");
+    system("title Andrzej's Calculator");
+
+    int first,second;
+
+    int selection;
+
+    Sleep (400);
+    cout << "C";
+    Sleep (400);
+    cout << "a";
+    Sleep (400);
+    cout << "l";
+    Sleep (400);
+    cout << "c";
+    Sleep (400);
+    cout << "u";
+    Sleep (400);
+    cout << "l";
+    Sleep (400);
+    cout << "a";
+    Sleep (400);
+    cout << "t";
+    Sleep (400);
+    cout << "o";
+    Sleep (400);
+    cout << "r" << endl;
+    Sleep(500);
+    cout << "By Andrzej Gawlowski" << endl;
+    Sleep(500);
+    cout << "All rights reserved (R)" << endl;
+    Sleep(800);
+    cout << ".";
+    Sleep(800);
+    cout << ".";
+    Sleep(800);
+    cout << "." << endl;
+    Sleep(800);
+    cout << "It can sum, substract, multiply or divide your numbers!" << endl;
+    cout << " " << endl;
+    cout << " " << endl;
+
+    cout << "Type your first number: ";
+    cin >> first;
+
+    cout << "Type your second number: ";
+    cin >> second;
+
+    cout << " " << endl;
+    cout << " " << endl;
+
+    cout << "What do you want to do with it?" << endl;
+    cout << "<1> for sum, <2> for substract, <3> for multiply, <4> for divide" << endl;
+    cout << "Your selection: ";
+    cin >> selection;
+
+    cout << " " << endl;
+    cout << " " << endl;
+
+    int sum=first+second;
+    int substract=first-second;
+    int multiply=first*second;
+    float divide=first/second;
+
+    if (selection==1)
+    {
+        cout << "Sum: " << first << "+" << second << "=" << sum << endl;
+    }
+    if (selection==2)
+    {
+        cout << "Substract: " << first << "-" << second << "=" << substract << endl;
+    }
+    if (selection==3)
+    {
+        cout << "Multiply: " << first << "*" << second << "=" << multiply << endl;
+    }
+    if (selection==4)
+    {
+        cout << "Divide: " << first << "/" << second << "=" << divide << endl;
+    }
+
+    if (selection>=5)
+    {
+        cout << "Syntax error (x404). Invalid operation number. (1 - 4)" << endl;
+    }
+
+    return 0;
+}
